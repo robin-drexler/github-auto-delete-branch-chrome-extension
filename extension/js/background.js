@@ -3,5 +3,5 @@ chrome.webRequest.onCompleted.addListener(
         console.log(details);
         chrome.tabs.sendMessage(details.tabId, {});
     }, {
-        urls: ['https://github.com/robin-drexler/*/pull/*/merge']
+        urls: ['https://github.com/*/*/pull/*/merge']
     });
